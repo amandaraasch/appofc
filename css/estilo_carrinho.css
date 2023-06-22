@@ -282,7 +282,6 @@ body
 .inteiro2
 {
     background-color: rgba(255, 255, 255, 0.719);
-    border-color:rgba(19, 113, 98, 0.719);
     border: 2px;
     border-style: solid;
     width: 90%;
@@ -294,6 +293,7 @@ body
     margin-top: 130px;
     margin-left: 70px;
     overflow-y: scroll;
+    border-color: rgb(37, 113, 113);
 }
 .botoes
 {
@@ -314,7 +314,7 @@ body
 }
 .limpar
 {
-    background-color: rgba(255, 0, 0, 0.733);
+    background-color: rgb(205, 104, 104);
     font-size: 15px;
     width: 200px;
     height: 70px;
@@ -333,7 +333,7 @@ body
 
 .comprar
 {
-    background-color: rgba(0, 128, 0, 0.781);
+    background-color: rgb(28, 102, 87);
     font-size: 15px;
     width: 200px;
     height: 70px;
