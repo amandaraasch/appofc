@@ -1,9 +1,19 @@
 <?php
 //pesquisar o id na tabela precos, usando a variavel $adicionado//
 
-$codigo=
-
 $adicionado=$_GET["adicionado"];
+include("conecta.php");
+
+$comando = $pdo->prepare("SELECT * FROM precos where nome_produto='$adicionado'");
+$resultado = $comando->execute();
+
+while( $linhas = $comando->fetch()){
+    $codigo = $linhas["id_preco"];
+}
+
+
+
+
 if($adicionado=="empadinha")
 {
     $imagem = "img/empadinha2.jpg";
@@ -32,7 +42,7 @@ if($adicionado=="mini pizza")
 {
     $imagem = "img/minipizza.jpg";
 }
-if($adicionado=="bolo_chocolate")
+if($adicionado=="bolo_de_chocolate")
 {
     $imagem = "img/bolodechocolate.png";
 }
@@ -47,7 +57,7 @@ if($adicionado=="chocolate quente")
 
 if($adicionado=="cookie")
 {
-    $imagem = "img/cookie002.jpg";
+    $imagem = "img/cookie.jpg";
 }
 
 if($adicionado=="torta de morango")
@@ -159,13 +169,13 @@ if($adicionado=="torta de framboesa")
             <div class="produtosvermelho">
                         <fieldset class="fieldcomidas">
                             <br>
-                                <input type="checkbox" name="comida"> &nbsp; SEM LEITE <br> <br>
-                                <input type="checkbox" name="comida"> &nbsp; SEM OVO  <br> <br>
-                                <input type="checkbox" name="comida"> &nbsp; SEM LACTOSE  <br> <br>
-                                <input type="checkbox" name="comida"> &nbsp; SEM AÇÚCAR  <br> <br>
-                                <input type="checkbox" name="comida"> &nbsp; SEM GLÚTEM  <br> <br>
-                                <input type="checkbox" name="comida"> &nbsp; SEM SAL  <br> <br>
-                                <input type="checkbox" name="comida"> &nbsp; SEM PROTEÍNA DO LEITE <br> <br>
+                                <input type="checkbox" id="sem_leite" name="comida"> &nbsp; SEM LEITE <br> <br>
+                                <input type="checkbox" id="sem_ovo" name="comida"> &nbsp; SEM OVO  <br> <br>
+                                <input type="checkbox" id="sem_lactose" name="comida"> &nbsp; SEM LACTOSE  <br> <br>
+                                <input type="checkbox" id="sem_acucar" name="comida"> &nbsp; SEM AÇÚCAR  <br> <br>
+                                <input type="checkbox" id="sem_glutem" name="comida"> &nbsp; SEM GLÚTEM  <br> <br>
+                                <input type="checkbox" id="sem_sal" name="comida"> &nbsp; SEM SAL  <br> <br>
+                                <input type="checkbox" id="sem_proteina_leite" name="comida"> &nbsp; SEM PROTEÍNA DO LEITE <br> <br>
                                 <div class="lembrete">
                                     <b>Atenção</b><br><div class="alerta">🚨</div>
                                     <div class="lembrete2">
@@ -183,7 +193,7 @@ if($adicionado=="torta de framboesa")
                             <div class="observacao">
                                 <b>ALGUMA OBSERVAÇÃO?</b><br>
                                 <fieldset class="obs">
-                                    <input class="obss" type="text">
+                                    <input class="obss" id="obs" type="text">
                                 </fieldset>
                                 <a href="#" onclick="salvar('<?php echo($codigo);  ?>');">
                                 <button class="ok"><b>ADICIONAR AO CARRINHO</b></button></a> 
@@ -208,6 +218,53 @@ if($adicionado=="torta de framboesa")
         {
             numero.value=parseInt(numero.value)-1
         }
+    }
+    function salvar(c)
+    {
+        op_sem_leite=0
+        if(sem_leite.checked)
+        {
+            op_sem_leite=1
+        }
+
+        op_sem_ovo=0
+        if(sem_ovo.checked)
+        {
+            op_sem_ovo=1
+        }
+
+        op_sem_lactose=0
+        if(sem_lactose.checked)
+        {
+            op_sem_lactose=1
+        }
+
+        op_sem_sal=0
+        if(sem_sal.checked)
+        {
+            op_sem_sal=1
+        }
+
+        op_sem_acucar=0
+        if(sem_acucar.checked)
+        {
+            op_sem_acucar=1
+        }
+
+        op_sem_proteina_leite=0
+        if(sem_proteina_leite.checked)
+        {
+            op_sem_proteina_leite=1
+        }
+
+        op_sem_glutem=0
+        if(sem_glutem.checked)
+        {
+            op_sem_glutem=1
+        }
+
+        url = "addcarrinho.php?op_sem_leite="+op_sem_leite+"&op_sem_ovo="+op_sem_ovo+"&op_sem_lactose="+op_sem_lactose+"&op_sem_acucar="+op_sem_acucar+"&op_sem_proteina_leite="+op_sem_proteina_leite+"&op_sem_glutem="+op_sem_glutem+"&op_sem_sal="+op_sem_sal
+        window.open(url,"_blank")
     }
 </script>
 </html>
