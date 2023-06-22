@@ -1,0 +1,249 @@
+body
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    background-image: url("../img/fundo4.jpg");
+    overflow: hidden;
+    font-family: "Audiowide", sans-serif;
+}
+.d1
+{
+   
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: center;
+    align-items: center;  
+}
+.cadastro
+{
+
+    width: 30%;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center; 
+}
+
+.letrascadastro
+{
+    font-size: 40px;
+}
+
+.dPessoais
+{
+    background: rgba(239, 244, 246, 0.7);
+    width: 25%;
+    height: 67vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+    border-radius: 40px;
+    margin-left: -270px;
+    
+    margin-top:-180px ;
+}
+.letraspessoais
+{
+    font-size: 25px;
+    color: rgb(53, 120, 141);
+}
+
+.dProfissionais
+{
+    background: rgba(239, 244, 246, 0.7);
+    width: 25%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+    border-radius: 40px;
+    margin-top: 0px;
+    margin-left: -100px;
+   
+}
+
+.fieldset1
+{
+    width: 250px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+    border-radius: 20px;
+    flex-direction: column;
+    border-style: solid;
+    border-color: black;
+     
+}
+.fieldset2
+{
+    width: 80%;
+    height: 90px;
+    display: flex;
+    justify-content:center;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+    border-radius: 20px;  
+}
+.fieldset3
+{
+    width: 80%;
+    height: 90px;
+    display: flex;
+    justify-content:center;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+    border-radius: 15px;
+     
+}
+
+input
+{
+    width: 100%;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.botoes
+{
+    background: rgba(239, 244, 246, 0.7);
+    z-index: 70;
+    position: absolute;
+    width: 90px;
+    height: 700px;
+    left:1500px;
+    top:50px;
+    border-radius: 10px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+    
+
+}
+.botao1
+{
+    background-color: aliceblue;
+    border-radius: 40px;
+    width: 70px;
+    height: 70px;
+    margin-left:10px;
+    margin-top: 20px;
+    background-color: rgba(53, 120, 141, 0.846);
+}
+
+.botao2
+{
+    background-color: aliceblue;
+    border-radius: 40px;
+    width: 70px;
+    height: 70px;
+    margin-left:10px;
+    margin-top: 100px;
+    background-color: rgba(53, 120, 141, 0.846);
+}
+
+.botao3
+{
+    background-color: aliceblue;
+    border-radius: 40px;
+    width: 70px;
+    height: 70px;
+    margin-left:10px;
+    margin-top:100px;
+    background-color: rgba(53, 120, 141, 0.846);
+}
+.botao4
+{
+    background-color: aliceblue;
+    border-radius: 40px;
+    width: 70px;
+    height: 70px;
+    margin-left:10px;
+    margin-top: 130px;
+    background-color: rgba(53, 120, 141, 0.846);
+}
+.lupa
+{
+    margin-left:9px;
+    margin-top: 10px;
+}
+.lixeira
+{
+    margin-top: 10px;
+    width: 50px;
+    margin-left:10px; 
+}
+.inserir
+{
+    margin-top: 0px;
+    width: 70px;
+    margin-left:0px;  
+}
+.alterar
+{
+    margin-top: 10px;
+    width: 50px;
+    margin-left:10px;  
+}
+.caixadetexto
+{
+    background: rgba(239, 244, 246, 0.7);
+    width: 400px;
+    height: 700px;
+    margin-left: -290px;
+    border-radius: 20px;
+    border-color:rgba(53, 120, 141, 0.567);
+    border-style: solid;
+    margin-top:0px;
+
+}
+.logo
+{
+    margin-top:50px;
+    margin-left: 120px;
+}
+.texto
+{
+   font-size:25px ;
+   margin-left:40px;
+   margin-top: 30px;
+}
+.texto2
+{
+   font-size:15px ;
+   margin-left:30px;
+   margin-top: 30px;
+}
+.logoescrita
+{
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    top: 690px;
+    left:1190px; 
+    z-index: 10;
+    font-size: 30px;
+}

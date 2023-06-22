@@ -1,0 +1,58 @@
+body
+{
+   
+    background-image: url("../img/fundo4.jpg");
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    justify-items: flex-end;
+    align-content: center;
+    align-items: center; 
+}
+.pedido
+{
+    margin-top: 100px;
+    width: 850px;
+    height: 150px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    justify-items: flex-end;
+    align-content: center;
+    align-items: center;
+    font-family: "Audiowide", sans-serif;
+    font-size: 30px;
+}
+.pedido2
+{
+    margin-left: 55px;
+    margin-top: 20px;
+    width: 70%;
+    height: 50px;
+    font-family: "Pinyon Script" ;
+    font-size: 45px;
+}
+.motoca
+{
+    margin-left: -100px;
+    width:300px;
+    margin-top: 20px;
+}
+.pontinhos
+{
+    margin-top: 10px;
+    position: absolute;
+    top: 512px;
+    left: 715px; 
+    animation:flash 5s infinite linear;
+   font-size: 30px;
+   font-weight: bold
+}
+.logo
+{
+    width: 50px;
+    z-index: 1;
+    position: absolute;
+    margin-top:250px;
+    margin-left: -190px;
+}

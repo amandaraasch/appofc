@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Google Maps</title>
+	<style>
+		#DIV_MAPA
+		{
+			width:500px;
+			height:400px;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="DIV_MAPA"></div>	
+<script>
+function CRIAR_MAPA() {
+	var PROPRIEDADES= {
+	center:new google.maps.LatLng(-26.314222,-48.840245),
+	zoom:18,
+	mapTypeId: google.maps.MapTypeId.HYBRID};	
+	var map = new google.maps.Map(document.getElementById("DIV_MAPA"),PROPRIEDADES);
+	
+	var MARCADOR1 = {lat:-26.314222,lng:-48.840245};
+	
+	var MARCA1 = new google.maps.Marker({position: MARCADOR1,
+	animation:google.maps.Animation.BOUNCE,
+	icon:{url:'seta.png',scaledSize: new google.maps.Size(30, 30)},});
+	MARCA1.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXlg-UheeFvXNuGdat0w-R5L0cVxoTr34&callback=CRIAR_MAPA">
+</script>
+</body>
+</html>
