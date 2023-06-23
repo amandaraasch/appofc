@@ -87,16 +87,16 @@
                         </div>
                     </div>
 
-                    <div class="img_legenda" id="pastel de frango">
-                        <img onclick="adicionar('pastel de frango');" src="../img/pastel.jpg" width="250px" height="320px" >
+                    <div class="img_legenda" id="pastel_de_frango">
+                        <img onclick="adicionar('pastel_de_frango');" src="../img/pastel.jpg" width="250px" height="320px" >
                         <div class="preco">
                             <b>PASTEL DE FRANGO</b>
                             <b>R$10,00</b>
                         </div>
                     </div> 
 
-                    <div class="img_legenda" id="pão de forma">
-                        <img onclick="adicionar('pão de forma');" src="../img/pão caseiro.jpg" width="250px" height="320px" >
+                    <div class="img_legenda" id="pao_de_forma">
+                        <img onclick="adicionar('pao_de_forma');" src="../img/pão caseiro.jpg" width="250px" height="320px" >
                         <div class="preco">
                             <b>PÃO DE FORMA</b>
                             <b>R$12,00</b>
@@ -105,8 +105,8 @@
 
                     
 
-                    <div class="img_legenda" id="misto quente">
-                        <img onclick="adicionar('misto quente');" src="../img/misto quente2.jpg" width="250px" height="320px"  >
+                    <div class="img_legenda" id="misto_quente">
+                        <img onclick="adicionar('misto_quente');" src="../img/misto quente2.jpg" width="250px" height="320px"  >
                         <div class="preco">
                             <b>MISTO QUENTE</b>
                             <b>R$ 9,00</b>
@@ -116,8 +116,8 @@
                     
                     
                     
-                    <div class="img_legenda" id="mini coxinhas">
-                        <img onclick="adicionar('mini coxinhas');" src="../img/imgcoxinha.png"width="250px" height="320px" >
+                    <div class="img_legenda" id="mini_coxinhas">
+                        <img onclick="adicionar('mini_coxinhas');" src="../img/imgcoxinha.png"width="250px" height="320px" >
                         <div class="preco">
                             <b>MINI COXINHAS</b>
                             <b>R$15,00</b>
@@ -125,8 +125,8 @@
                     </div> 
 
 
-                    <div class="img_legenda" id="pão de queijo">
-                        <img onclick="adicionar('pão de queijo');"src="../img/PÃO DE QUEIJO 02.JPG"width="250px" height="320px" >
+                    <div class="img_legenda" id="pao_de_queijo">
+                        <img onclick="adicionar('pao de queijo');"src="../img/PÃO DE QUEIJO 02.JPG"width="250px" height="320px" >
                         <div class="preco">
                             <b>PÃO DE QUEIJO</b>
                             <b>R$4,00</b>
@@ -134,7 +134,7 @@
                     </div> 
 
 
-                    <div class="img_legenda" id="mini pizza">
+                    <div class="img_legenda" id="mini_pizza">
                         <img onclick="adicionar('mini pizza');" src="../img/minipizza.jpg"width="250px" height="320px" >
                         <div class="preco">
                             <b>MINI PIZZA</b>
@@ -202,12 +202,12 @@
         {
             clicks=1
             document.getElementById("empadinha").style.borderStyle = "none"
-            document.getElementById("pastel de frango").style.borderStyle = "none"
-            document.getElementById("pão de forma").style.borderStyle = "none"
-            document.getElementById("misto quente").style.borderStyle = "none"
-            document.getElementById("mini coxinhas").style.borderStyle = "none"
-            document.getElementById("pão de queijo").style.borderStyle = "none"
-            document.getElementById("mini pizza").style.borderStyle = "none"
+            document.getElementById("pastel_de_frango").style.borderStyle = "none"
+            document.getElementById("pao_de_forma").style.borderStyle = "none"
+            document.getElementById("misto_quente").style.borderStyle = "none"
+            document.getElementById("mini_coxinhas").style.borderStyle = "none"
+            document.getElementById("pao_de_queijo").style.borderStyle = "none"
+            document.getElementById("mini_pizza").style.borderStyle = "none"
 
             document.getElementById(produto).style.borderColor="green"
             document.getElementById(produto).style.borderStyle = "solid"
@@ -221,7 +221,8 @@
     }
     function abrir(arquivo)
     {
-        window.open(arquivo+"?adicionado=" +adicionado)
+
+        window.open(arquivo+"?adicionado=" +adicionado);
     }
 </script>
 </html>

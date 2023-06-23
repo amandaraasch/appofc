@@ -305,6 +305,7 @@ body
     position: absolute;
     display: flex;
     flex-direction:row ;
+
     font-size: 50PX;padding-left: 80px;
   
     
@@ -330,7 +331,103 @@ body
 
     
 }
+.pedido
+{
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.462);
+    border-width:2px;
+    width:1420px; ;
+    height:200px ;
+    margin-top: 5px;
+    flex-direction: row;
+    display: flex;
+   
+}
+.img
+{
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.462);
+    border-width:2px;
+    width:280px; ;
+    height:150px ;
+    border-radius: 5px;
+    margin-top: 16px;
+    margin-left: 6px;
+    z-index: 1;
+    position: absolute;
+}
+.nome_produto
+{
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.462);
+    border-width:2px;
+    width:340px; 
+    height:50px ;
+    margin-left:320px ;
+    margin-top: 16px;
+}
+.restricoes
+{
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.462);
+    border-width:2px;
+    width:780px; 
+    height:20px ;
+   
+    margin-top: 86px;
+}
+.preco
+{
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.462);
+    border-width:2px;
+    width:100px; 
+    height:200px ;
+   
+  
+}
+.total
+{
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.462);
+    border-width:2px;
+    width:100px; 
+    height:200px ;
+  
+}
+.quantidade
+{
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.462);
+    border-width:2px;
+    width:100px; 
+    height:200px ;
+  
+}
+.caixa
+{
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.462);
+    border-width:1px;
+    width:100px; 
+    height:30px ;
+    font-size: 13PX;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+  
+}
+.pagar
+{
+    width:300px ;
+    height: 200px;
 
+    margin-left: 700px;
+    flex-direction: row;
+    display: flex;
+}
 .comprar
 {
     background-color: rgb(28, 102, 87);

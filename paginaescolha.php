@@ -11,34 +11,31 @@ while( $linhas = $comando->fetch()){
     $codigo = $linhas["id_preco"];
 }
 
-
-
-
 if($adicionado=="empadinha")
 {
     $imagem = "img/empadinha2.jpg";
 }
-if($adicionado=="pastel de frango")
+if($adicionado=="pastel_de_frango")
 {
     $imagem = "img/pastel.jpg";
 }
-if($adicionado=="pão de forma")
+if($adicionado=="pao_de_forma")
 {
     $imagem = "img/pão caseiro.jpg";
 }
-if($adicionado=="misto quente")
+if($adicionado=="misto_quente")
 {
     $imagem = "img/misto quente2.jpg";
 }
-if($adicionado=="mini coxinhas")
+if($adicionado=="mini_coxinhas")
 {
     $imagem = "img/imgcoxinha.png";
 }
-if($adicionado=="pão de queijo")
+if($adicionado=="pao_de_queijo")
 {
     $imagem = "img/PÃO DE QUEIJO 02.JPG";
 }
-if($adicionado=="mini pizza")
+if($adicionado=="mini_pizza")
 {
     $imagem = "img/minipizza.jpg";
 }
@@ -46,11 +43,11 @@ if($adicionado=="bolo_de_chocolate")
 {
     $imagem = "img/bolodechocolate.png";
 }
-if($adicionado=="sonho recheado")
+if($adicionado=="sonho_recheado")
 {
     $imagem = "img/sonho recheado02.jpg";
 }
-if($adicionado=="chocolate quente")
+if($adicionado=="chocolate_quente")
 {
     $imagem = "img/Chocolate Quente 002.jpg";
 }
@@ -60,7 +57,7 @@ if($adicionado=="cookie")
     $imagem = "img/cookie.jpg";
 }
 
-if($adicionado=="torta de morango")
+if($adicionado=="torta_de_morango")
 {
     $imagem = "img/tortademorango.jpg";
 }
@@ -69,7 +66,7 @@ if($adicionado=="brownie")
 {
     $imagem = "img/brownie.jpg";
 }
-if($adicionado=="torta de framboesa")
+if($adicionado=="torta_de_framboesa")
 {
     $imagem = "img/tortamorango.png";
 }
@@ -265,6 +262,7 @@ if($adicionado=="torta de framboesa")
 
         url = "addcarrinho.php?op_sem_leite="+op_sem_leite+"&op_sem_ovo="+op_sem_ovo+"&op_sem_lactose="+op_sem_lactose+"&op_sem_acucar="+op_sem_acucar+"&op_sem_proteina_leite="+op_sem_proteina_leite+"&op_sem_glutem="+op_sem_glutem+"&op_sem_sal="+op_sem_sal
         window.open(url,"_blank")
+        
     }
 </script>
 </html>

@@ -68,7 +68,26 @@
                 <p>TODOS OS DADOS DO SEU PEDIDO ESTÃO AQUI:</p>
        </div>
        <div class="inteiro2">
-
+        <div class="pedido">
+            <div class="img"></div>
+            <div class="descricao"></div>
+            <div class="nome_produto"></div>
+            <div class="restricoes"></div>
+            <div class="pagar">
+            <div class="quantidade">
+                    <div class="caixa">QTD
+                    </div>
+                </div>
+                <div class="preco">
+                    <div class="caixa"> PREÇO <BR> UNID.</div>
+                </div>
+                <div class="total">
+                <div class="caixa">TOTAL</div>
+                </div>
+                
+            </div>
+         
+        </div>
        </div>
 
        <div class="botoes">
