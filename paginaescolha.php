@@ -134,7 +134,7 @@ if($adicionado=="torta_de_framboesa")
             MEU CARRINHO
         </div>
         <div class="D8">
-            <a href="html/paginacarrinho.html">
+            <a href="paginacarrinho.php">
             <img  title="Ver carrinho" src="img/carrinho.png" width="130px" height="80px"> 
             </a>
         </div>

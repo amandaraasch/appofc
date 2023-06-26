@@ -8,7 +8,7 @@
     <link rel="Website Icon" type="png"
     href="../img/minilogo1.png">
     <title>Pagina carrinho</title>
-    <link rel="stylesheet" href="../css/estilo_carrinho.css">
+    <link rel="stylesheet" href="css/estilo_carrinho.css">
     <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Freehand&family=Pinyon+Script&display=swap" rel="stylesheet">
     
@@ -20,26 +20,26 @@
                 
             <div class="D3">
                 <a href="paginainicial.html">
-                <img  title="Ver Página Inicial" src="../img/casinha.png" width="120px" height="60px"> 
+                <img  title="Ver Página Inicial" src="img/casinha.png" width="120px" height="60px"> 
                 </a> 
 
             </div>
             
              <div class="D5">
                 <a href="paginahistorico.html">
-                <img title="Ver Histórico" src="../img/lupa.png" width="35px" height="35px"> 
+                <img title="Ver Histórico" src="img/lupa.png" width="35px" height="35px"> 
                 </a> 
                 
              </div>
              <div class="D6">
                 <a href="../paginaperfil.php">
-                <img  title="Ver Perfil" src="../img/perfil.png" width="70px" height="70px"> 
+                <img  title="Ver Perfil" src="img/perfil.png" width="70px" height="70px"> 
                 </a> 
                 
              </div>
              <div class="D4">
                 <a href="Paginalocalização.html">
-                <img  title="The Inclusive Bakery" src="../img/localização.png" width="40px" height="40px"> 
+                <img  title="The Inclusive Bakery" src="img/localização.png" width="40px" height="40px"> 
                 </a> 
                 
              </div>
@@ -48,11 +48,11 @@
             </div>
             <div class="D8">
                 <a href="paginacarrinho.php">
-                <img  title="Ver carrinho" src="../img/carrinho.png" width="130px" height="80px"> 
+                <img  title="Ver carrinho" src="img/carrinho.png" width="130px" height="80px"> 
                 </a>
             </div>
              <div class="D9">
-                <img src="../img/trespontos.png" width="280px" height="190px"> 
+                <img src="img/trespontos.png" width="280px" height="190px"> 
                 
                
                 
@@ -69,30 +69,26 @@
        </div>
        <div class="inteiro2">
         <div class="pedido">
-            <div class="img"></div>
-            <div class="descricao"></div>
-            <div class="nome_produto"></div>
-            <div class="restricoes"></div>
+            <div class="pedido2">
+                <div class="img"></div>
+                <div class="descricao"></div>
+                <div class="nome_produto"></div>
+                <div cLASS="restricoes"></div>
+         </div>
             <div class="pagar">
-            <div class="quantidade">
-                    <div class="caixa">QTD
-                    </div>
-                </div>
-                <div class="preco">
-                    <div class="caixa"> PREÇO <BR> UNID.</div>
-                </div>
-                <div class="total">
-                <div class="caixa">TOTAL</div>
-                </div>
-                
+                <div class="quantidade"><div class="caixa"></div></div>
+                <div class="preco"> <div class="caixa"></div></div>
+                <div class="total"> <div class="caixa"></div></div>
+            </div>
+            
+            
             </div>
          
         </div>
        </div>
 
        <div class="botoes">
-        <div class="limpar"><B>LIMPAR CARRINHO</B></div>
-        <a href="paginapagamento.html" >
+        <a href="html/paginapagamento.html" >
             <div class="comprar"><B>COMPRAR</B></div>
         </a>
       
@@ -122,5 +118,5 @@
     
 
 
-<img class="logo" src="../img/cupcake.png"   >  
+<img class="logo" src="img/cupcake.png"   >  
         
