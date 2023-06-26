@@ -12,6 +12,11 @@ body
     align-items: center;
     align-content: center;
 }
+#status-img
+{
+    color: azure;
+    margin-left: -1570px;
+}
 .principal
 {
     border-color: brown;

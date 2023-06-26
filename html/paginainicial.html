@@ -18,13 +18,16 @@
 </head>
 <body>
     <div class="principal">
+        
         <div class="D1">
-            
+            <img id="status-img" src="../img/vermelha.png" alt="Offline" width="15px" height="15px">
             <div class="D2">
               
-                 
+                
                  <div class="D10">
+                   
                     <div class="D3">
+                       
                         <div title="Ver Página Inicial" class="interior"></div>
                         <a href="paginainicial.html">
                         <img  src="../img/casinha.png" width="120px" height="60px"> 
@@ -57,20 +60,11 @@
                     </div>
                     <div class="D8">
                         <div title="Ver Carrinho"  class="interior"></div>
-                        <a href="paginacarrinho.php">
+                        <a href="../paginacarrinho.php">
                         <img  src="../img/carrinho.png" width="130px" height="80px"> 
                         </a>
                     </div>
-                     <div class="D9">
-                        <div class="interior"></div>
-                      <img src="../img/trespontos.png" width="280px" height="190px">
-                        
-                
-                       
-                        
-                       
-                        
-                     </div>
+                     
                      
                     <div class="D11"></div>
                     <div class="D12"></div>
@@ -272,6 +266,30 @@
 </body>
 <script src="jquery.js"></script>
 <script>
+    function verificarStatusPorHora() {
+      var statusImg = document.getElementById("status-img");
+
+      // Obtenha a hora atual
+      var data = new Date();
+      var hora = data.getHours();
+
+      // Defina o intervalo de horário para estar "online"
+      var horaInicioOnline = 8; // Por exemplo, 8:00 AM
+      var horaFimOnline = 22; // Por exemplo, 8:00 PM
+
+      // Verifique se está dentro do intervalo "online"
+      if (hora >= horaInicioOnline && hora < horaFimOnline) {
+        statusImg.src = "../img/verde.png";
+        statusImg.alt = "Online";
+      } else {
+        statusImg.src = "../img/vermelha.png";
+        statusImg.alt = "Offline";
+      }
+    }
+
+    // Chame a função verificarStatusPorHora quando a página for carregada
+    window.onload = verificarStatusPorHora;
+    
     function abrir(arquivo)
     {
         window.open(arquivo,"_blank")

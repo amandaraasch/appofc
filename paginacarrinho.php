@@ -19,26 +19,26 @@
                  
                 
             <div class="D3">
-                <a href="paginainicial.html">
+                <a href="html/paginainicial.html">
                 <img  title="Ver Página Inicial" src="img/casinha.png" width="120px" height="60px"> 
                 </a> 
 
             </div>
             
              <div class="D5">
-                <a href="paginahistorico.html">
+                <a href="html/paginahistorico.html">
                 <img title="Ver Histórico" src="img/lupa.png" width="35px" height="35px"> 
                 </a> 
                 
              </div>
              <div class="D6">
-                <a href="../paginaperfil.php">
+                <a href="paginaperfil.php">
                 <img  title="Ver Perfil" src="img/perfil.png" width="70px" height="70px"> 
                 </a> 
                 
              </div>
              <div class="D4">
-                <a href="Paginalocalização.html">
+                <a href="html/Paginalocalização.html">
                 <img  title="The Inclusive Bakery" src="img/localização.png" width="40px" height="40px"> 
                 </a> 
                 

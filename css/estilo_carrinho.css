@@ -456,8 +456,14 @@ body
     margin-top: 700px;
     margin-left: 1200px;
 }
+#status-img
+{
+    color: azure;
+    margin-left: -1570px;
+}
 a
 {
  text-decoration: none;
  color:black;
 }
+

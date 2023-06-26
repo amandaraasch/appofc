@@ -47,7 +47,7 @@
                 MEU CARRINHO
             </div>
             <div class="D8">
-                <a href="paginacarrinho.php">
+                <a href="../paginacarrinho.php">
                 <img  title="Ver carrinho" src="../img/carrinho.png" width="130px" height="80px"> 
                 </a>
             </div>
@@ -61,6 +61,7 @@
             <div class="D11"></div>
             
             
+           
 
     <img class="logo" src="../img/cupcake.png"   >  
 
@@ -108,6 +109,29 @@
         icon:{url:'seta.png',scaledSize: new google.maps.Size(30, 30)},});
         MARCA1.setMap(map);
     }
+    function verificarStatusPorHora() {
+      var statusImg = document.getElementById("status-img");
+
+      // Obtenha a hora atual
+      var data = new Date();
+      var hora = data.getHours();
+
+      // Defina o intervalo de horário para estar "online"
+      var horaInicioOnline = 8; // Por exemplo, 8:00 AM
+      var horaFimOnline = 22; // Por exemplo, 8:00 PM
+
+      // Verifique se está dentro do intervalo "online"
+      if (hora >= horaInicioOnline && hora < horaFimOnline) {
+        statusImg.src = "../img/verde.png";
+        statusImg.alt = "Online";
+      } else {
+        statusImg.src = "../img/vermelha.png";
+        statusImg.alt = "Offline";
+      }
+    }
+
+    // Chame a função verificarStatusPorHora quando a página for carregada
+    window.onload = verificarStatusPorHora;
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXlg-UheeFvXNuGdat0w-R5L0cVxoTr34&callback=CRIAR_MAPA">
     </script>

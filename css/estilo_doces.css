@@ -415,6 +415,11 @@ a
     z-index: 10;
 
 }
+#status-img
+{
+    color: azure;
+    margin-left: -1570px;
+}
 .titulo
 {
     font-size: 60px;
