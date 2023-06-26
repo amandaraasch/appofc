@@ -622,6 +622,7 @@ a
     top: 0px;
     border-color: black;
     border-style: solid;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-width: 2px;
     z-index: 10;
     position: absolute;
@@ -739,6 +740,7 @@ a
     border-style: solid;
     border-width: 2px;
     position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -867,6 +869,7 @@ a
     justify-items: center;
     align-content: center;
     align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 
 }
@@ -878,6 +881,7 @@ a
    font-family: 'Bebas Neue', cursive;
    font-size: 10px;
    cursor: pointer;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    margin-left: 100px;
    margin-top: 20px;
 }
@@ -1023,6 +1027,7 @@ html, body {
     align-items: center;
     align-content: center;
     box-shadow:3px 3px rgba(0, 0, 0, 0.628) ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .sociais
 {
@@ -1033,6 +1038,7 @@ html, body {
     left:1200px;
     position: absolute;
     z-index: 50;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     flex-direction: column;
     display: none;
     opacity: 1;
@@ -1050,6 +1056,7 @@ html, body {
     align-content: center;
     margin-top: 10px; 
     margin-left: 90px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .atendimento p 
 {
@@ -1058,6 +1065,7 @@ html, body {
     align-items: center;
     align-content: center;
     margin-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    
     
 }
@@ -1069,6 +1077,7 @@ html, body {
     align-content: center;
     margin-top: 10px; 
     margin-left: 90px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .LOGOESTRELA
 {
