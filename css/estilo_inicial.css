@@ -22,18 +22,24 @@ body
 #status-img
 {
     color: azure;
-    margin-top: -160px;
-    margin-left: 200px;
-    z-index: 1;
+    margin-top: 340px;
+    margin-left: -1720px;
+    z-index: 20;
+    border-color: #222;
+    border-style: solid;
+    border:2px;
+    position: absolute;
+    display: flex;
    
 }
 
 .D1
 {
-    width: 120%;
+    width: 140%;
     height: 32vh;
     background-color: rgba(255, 255, 255, 0.633);
     display: flex;
+    margin-left: 00px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -57,7 +63,7 @@ body
     position: absolute;
     width: 60px;
     height: 60px;
-    left: 40px;
+    left: 300px;
     top:9px;
     display: flex;
     flex-direction: row;
@@ -107,7 +113,7 @@ body
     width: 60px;
     height: 60px;
     top:9px;
-    left: 150px;
+    left: 400px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -131,7 +137,7 @@ body
     position: absolute;
     width: 60px;
     height: 60px;
-    left: 260px;
+    left: 520px;
     top:8px;
     display: flex;
     flex-direction: row;
@@ -156,7 +162,7 @@ body
     position: absolute;
     width: 60px;
     height: 60px;
-    left: 370px;
+    left: 650px;
     top:9px;
     display: flex;
     flex-direction: row;
@@ -181,7 +187,7 @@ body
     position: absolute;
     width: 150px;
     height: 60px;
-    left: 950px;
+    left: 1150px;
     top:15px;
     display: flex;
     flex-direction: row;
@@ -200,7 +206,7 @@ body
     position: absolute;
     width: 60px;
     height: 60px;
-    left: 1090px;
+    left: 1290px;
     top:9px;
     display: flex;
     flex-direction: row;
@@ -227,7 +233,7 @@ body
     position: absolute;
     width: 60px;
     height: 60px;
-    left:1150px;
+    left:1750px;
     top: 10px;
     display: flex;
     flex-direction: row;
@@ -279,7 +285,7 @@ body
 .D12
 {
    
-    width: 72%;
+    width: 52%;
     height: 82px;
     background-color: rgb(44, 119, 119);
     display: flex;
@@ -290,7 +296,7 @@ body
     justify-items: center;
      border-radius: 9px;
      top:0px;
-     margin-left:-550px
+     margin-left:-700px
 
    
     
@@ -316,7 +322,7 @@ body
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, cursive;
     position: absolute;
     top: 60px;
-    left:400px; 
+    left:500px; 
     z-index: 10;
 
 }
@@ -506,7 +512,7 @@ a
  z-index: 11;
  position:absolute;
  top:95px;
- left:50px;
+ left:190px;
 }
 /*.central
 {
