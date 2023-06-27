@@ -289,6 +289,9 @@ while ($linhas = $comando->fetch())
                 <img class="logoredes" title="Ir Para Página Inicial"  src="../img/cupcake.png" width="100px">
              <BR>
                 <p><B>REDES SOCIAIS:</B></p>
+                <br>
+<img src="../img/instanovo.png">
+                <br> @the_inclusive_bakery
             </div>
             
         
