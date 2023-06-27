@@ -6,8 +6,7 @@
     $preco=    $_GET["preco"];     
     $comando = $pdo->prepare("UPDATE precos SET preco_atual=$preco where id_preco=$codigo");
     $resultado = $comando->execute();
-                
-   
+ 
 }
  ?>
 

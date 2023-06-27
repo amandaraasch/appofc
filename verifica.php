@@ -34,7 +34,7 @@ echo($senha);
         else
         {
             $_SESSION["logado"] = $login;
-            header("Location: html/paginainicial.html");
+            header("Location: html/paginainicial.php");
         }
 
         }

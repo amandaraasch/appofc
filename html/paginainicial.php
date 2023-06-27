@@ -1,3 +1,16 @@
+<?php
+include("../conecta.php");
+
+$comando = $pdo->prepare("SELECT * FROM precos where preco_atual = :novoP");
+$comando->bindParam(':novoP', $novoP);
+$resultado = $comando->execute();
+
+while ($linhas = $comando->fetch()) 
+{
+    $novoP = $linhas["preco_atual"];
+}
+?>
+
 <!DOCTYPE html>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 <html lang="pt-br">
@@ -20,7 +33,7 @@
     <div class="principal">
         
         <div class="D1">
-            <img id="status-img" src="../img/vermelha.png" alt="Offline" width="15px" height="15px">
+        <img id="status-img" src="../img/vermelha.png" alt="Offline" width="35px" height="35px">
             <div class="D2">
               
                 
@@ -29,7 +42,7 @@
                     <div class="D3">
                        
                         <div title="Ver Página Inicial" class="interior"></div>
-                        <a href="paginainicial.html">
+                        <a href="paginainicial.php">
                         <img  src="../img/casinha.png" width="120px" height="60px"> 
                         </a> 
     
@@ -124,7 +137,18 @@
                             <img src="../img/imgcoxinha.png" width="350px" height="450px" >
                             <div class="preco">
                                 <b>MINI COXINHA</b>
-                                <b>R$15,00</b>
+                                <?php
+                            while ($linhas = $comando->fetch()) 
+                            {
+                                $codigo = $linhas["preco_atual"];
+                                $novoP = $_GET["novoP"];
+
+                                echo
+                                ("$novoP");
+
+                            }
+                               
+                            ?>
                             </div>
                         </div>
     
@@ -132,7 +156,9 @@
                             <img src="../img/tortamorango.png" width="350px"height="450px">
                             <div class="preco">
                                 <b>TORTA DE FRAMBOESA</b>
-                                <b>R$17,00</b>
+                                <?php
+                                    echo("$novoP");
+                                ?>
                             </div>
                         </div> 
 
@@ -140,7 +166,9 @@
                             <img src="../img/tortademorango.jpg" width="350px" height="450px" >
                             <div class="preco">
                                 <b>TORTA DE MORANGO</b>
-                                <b>R$07,00</b>
+                                <?php
+                                    echo("$novoP");
+                                ?>
                             </div>
                         </div>
 
@@ -150,7 +178,9 @@
                             <img src="../img/imgcoxinha.png" width="350px" height="450px" >
                             <div class="preco">
                                 <b>MINI COXINHA</b>
-                                <b>R$15,00</b>
+                                <?php
+                                    echo("$novoP");
+                                ?>
                             </div>
                         </div>
                         
@@ -161,7 +191,9 @@
                             <img src="../img/tortamorango.png" width="350px"height="450px">
                             <div class="preco">
                                 <b>TORTA DE FRAMBOESA</b>
-                                <b>R$17,00</b>
+                                <?php
+                                    echo("$novoP");
+                                ?>
                             </div>
                         </div> 
 
@@ -245,7 +277,7 @@
                         <BR>
                            <p><b>segunda a sexta:</b>
                             <br>
-                             7:30 as 22:00
+                            8:00 as 22:00
                             <br>
                             <b> sábados, domingos e feriados:</b>
                             <br>

@@ -71,17 +71,6 @@ if($adicionado=="torta_de_framboesa")
     $imagem = "img/tortamorango.png";
 }
 
-
-
-
-
-
-
-
-
-
-
-
 ?>
 
 
