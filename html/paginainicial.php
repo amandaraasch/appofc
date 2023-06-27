@@ -34,7 +34,7 @@ while ($linhas = $comando->fetch())
     <div class="principal">
         
         <div class="D1">
-        <img id="status-img" src="../img/vermelha.png" alt="Offline" width="35px" height="35px">
+        <img id="status-img" src="../img/vermelha.png" alt="Offline" width="25px" height="25px">
             <div class="D2">
               
                 
@@ -289,6 +289,11 @@ while ($linhas = $comando->fetch())
                 <img class="logoredes" title="Ir Para Página Inicial"  src="../img/cupcake.png" width="100px">
              <BR>
                 <p><B>REDES SOCIAIS:</B></p>
+                <br>
+                <div class="arroba">
+
+                <br> @the_inclusive_bakery
+                </div>
             </div>
             
         
@@ -649,9 +654,5 @@ function distance( x1, y1, x2, y2 ) {
   return Math.sqrt( dx*dx + dy*dy );
 }
 
-
-
-
-  
 </script>
 </html>

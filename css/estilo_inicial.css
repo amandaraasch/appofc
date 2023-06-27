@@ -21,9 +21,13 @@ body
 #status-img
 {
     color: azure;
-    margin-top: -160px;
-    margin-left: 200px;
-    z-index: 1;
+    margin-top: 
+    350px;
+    margin-left: -1580px;
+    z-index: 20;
+    position: absolute;
+    display: flex;
+    
    
 }
 
@@ -33,7 +37,7 @@ body
     height: 32vh;
     background-color: rgba(255, 255, 255, 0.633);
     display: flex;
-    margin-left: 00px;
+    margin-left: 0px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -57,7 +61,7 @@ body
     position: absolute;
     width: 60px;
     height: 60px;
-    left: 300px;
+    left: 250px;
     top:9px;
     display: flex;
     flex-direction: row;
@@ -107,7 +111,7 @@ body
     width: 60px;
     height: 60px;
     top:9px;
-    left: 400px;
+    left: 350px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -131,7 +135,7 @@ body
     position: absolute;
     width: 60px;
     height: 60px;
-    left: 520px;
+    left: 450px;
     top:8px;
     display: flex;
     flex-direction: row;
@@ -156,7 +160,7 @@ body
     position: absolute;
     width: 60px;
     height: 60px;
-    left: 650px;
+    left: 550px;
     top:9px;
     display: flex;
     flex-direction: row;
@@ -181,7 +185,7 @@ body
     position: absolute;
     width: 150px;
     height: 60px;
-    left: 1150px;
+    left: 1100px;
     top:15px;
     display: flex;
     flex-direction: row;
@@ -194,13 +198,21 @@ body
     overflow: hidden;
     
 }
+.arroba
+{
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-left: 80px;
+}
 .D8
 {
    /* background-color: yellow;*/
     position: absolute;
     width: 60px;
     height: 60px;
-    left: 1290px;
+    left: 1240px;
     top:9px;
     display: flex;
     flex-direction: row;
@@ -505,7 +517,7 @@ a
  z-index: 11;
  position:absolute;
  top:95px;
- left:190px;
+ left:180px;
 }
 /*.central
 {

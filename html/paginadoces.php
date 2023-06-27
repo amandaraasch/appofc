@@ -1,4 +1,6 @@
-
+<?php
+ include("../conecta.php"); //conecta com o banco de dados
+?>
 <!DOCTYPE html>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 <html lang="pt-br">
@@ -93,70 +95,40 @@
              </div>
             <div class="carrossel" id="carrossel">
                 <div class="todas">
-                    <div id="bolo_de_chocolate" class="img_legenda">
-                        <img onclick="adicionar('bolo_de_chocolate');" src="../img/bolodechocolate.png" width="250px" height="320px" >
-                        <div class="preco">
-                            <b>BOLO DE CHOCOLATE</b>
-                            <b>R$13,00</b>
-                        </div>
-                    </div>
+    <?php
+            $comando = $pdo->prepare("SELECT * FROM precos where tipo= 1");
+            $resultado = $comando->execute();
 
-                    <div class="img_legenda" id="sonho_recheado">
-                        <img onclick="adicionar('sonho_recheado');" src="../img/sonho recheado02.jpg" width="250px" height="320px" >
-                        <div class="preco">
-                            <b>SONHO RECHEADO</b>
-                            <b>R$5,00</b>
-                        </div>
-                    </div> 
+            if ($resultado) {
+                if ($comando->rowCount() > 0) {
+                    $doce = $comando->fetchAll(PDO::FETCH_ASSOC);
 
-                    <div class="img_legenda" id="chocolate_quente">
-                        <img onclick="adicionar('chocolate_quente');" src="../img/Chocolate Quente 002.jpg" width="250px" height="300px" >
-                        <div class="preco">
-                            <b>CHOCOLATE QUENTE</b>
-                            <b>R$9,00</b>
-                        </div>
-                    </div>
-
+                    foreach ($doce as $doce) {
+                        $id = $doce['id_preco'];
+                        $nome = $doce['nome_produto'];
+                        $preco = $doce['preco_atual'];
+                        $imagem = $doce['imagem'];
                     
+                        echo '<div id="' . $id . '" class="img_legenda">';
+                        echo '<img onclick="adicionar(' . $id . ');" src="data:image/jpeg;base64,' . base64_encode($imagem) . '" width="250px" height="320px">';
+                        echo '<div class="preco">';
+                        echo '<b>' . $nome . '</b>';
+                        echo '<b>R$ ' . $preco . '</b>';
+                        echo '</div>';
+                        echo '</div>';
+                    }
 
-                    <div class="img_legenda" id="cookie">
-                        <img onclick="adicionar('cookie');" src="../img/cookie.jpg" width="250px" height="320px"  >
-                        <div class="preco">
-                            <b>COOKIE</b>
-                            <b>R$ 4,00</b>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                    
-                    <div class="img_legenda" id="torta_de_morango">
-                        <img onclick="adicionar('torta_de_morango');" src="../img/tortademorango.jpg" width="250px" height="320px" >
-                        <div class="preco">
-                            <b>TORTA DE MORANGO</b>
-                            <b>R$15,00</b>
-                        </div>
-                    </div> 
+                }
+            } else {
+                echo "Erro na execução da consulta.";
+            }
+    ?>
 
 
-                    <div class="img_legenda" id="brownie">
-                        <img onclick="adicionar('brownie');"src="../img/brownie.jpg"width="250px" height="320px" >
-                        <div class="preco">
-                            <b>BROWNIE</b>
-                            <b>R$6,00</b>
-                        </div>
-                    </div> 
 
 
-                    <div class="img_legenda" id="torta_de_framboesa">
-                        <img onclick="adicionar('torta_de_framboesa');" src="../img/tortamorango.png"width="250px" height="320px" >
-                        <div class="preco">
-                            <b>TORTA DE FRAMBOESA</b>
-                            <b>R$15,00</b>
-                        </div>
-                    </div> 
 
-                </div>
+
                 <div class="titulo">
                     DOCES:
                 </div>
@@ -214,17 +186,16 @@
         else
         {
             clicks=1
-            document.getElementById("sonho_recheado").style.borderStyle = "none"
-            document.getElementById("chocolate_quente").style.borderStyle = "none"
-            document.getElementById("bolo_de_chocolate").style.borderStyle = "none"
-            document.getElementById("torta_de_morango").style.borderStyle = "none"
-            document.getElementById("cookie").style.borderStyle = "none"
-            document.getElementById("brownie").style.borderStyle = "none"
-            document.getElementById("torta_de_framboesa").style.borderStyle = "none"
+            document.getElementById("8").style.borderStyle = "none"
+            document.getElementById("9").style.borderStyle = "none"
+            document.getElementById("10").style.borderStyle = "none"
+            document.getElementById("11").style.borderStyle = "none"
+            document.getElementById("12").style.borderStyle = "none"
+            document.getElementById("13").style.borderStyle = "none"
+            document.getElementById("14").style.borderStyle = "none"
 
             document.getElementById(produto).style.borderColor="green"
             document.getElementById(produto).style.borderStyle = "solid"
-
 
 
         }
@@ -236,28 +207,5 @@
     {
         window.open(arquivo+"?adicionado=" +adicionado)
     }
-    function verificarStatusPorHora() {
-      var statusImg = document.getElementById("status-img");
-
-      // Obtenha a hora atual
-      var data = new Date();
-      var hora = data.getHours();
-
-      // Defina o intervalo de horário para estar "online"
-      var horaInicioOnline = 8; // Por exemplo, 8:00 AM
-      var horaFimOnline = 22; // Por exemplo, 8:00 PM
-
-      // Verifique se está dentro do intervalo "online"
-      if (hora >= horaInicioOnline && hora < horaFimOnline) {
-        statusImg.src = "../img/verde.png";
-        statusImg.alt = "Online";
-      } else {
-        statusImg.src = "../img/vermelha.png";
-        statusImg.alt = "Offline";
-      }
-    }
-
-    // Chame a função verificarStatusPorHora quando a página for carregada
-    window.onload = verificarStatusPorHora;
 </script>
 </html>

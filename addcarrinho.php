@@ -16,4 +16,3 @@
         $comando = $pdo->prepare("INSERT INTO restricoes VALUES( $op_sem_leite ,$sem_ovo,$sem_acucar,$sem_sal,$sem_glutem,$sem_proteina_leite,$sem_lactose, $sem_numero,' $obs ')");
         $resultado = $comando->execute();
         header("Location: html/paginacarrinho.php");
-   
