@@ -19,17 +19,21 @@
             <img class="logo" src="../img/novalogo.png" width="180px">
             <h1>FAÇA SEU LOGIN:</h1>
 
-     <form action="../verifica.php" method="post">
-
+     <form action="../verifica.php" method="post" onsubmit="return validarCampo()">
+        
                 <fieldset class="fieldset1">
                 <legend><b>EMAIL:</b> </legend>
-                <input class="caixa" type="email" name="login">
+                <input class="caixa" type="email" id="login" name="login">
             </fieldset>
+           
                 <br> 
+                
             <fieldset class="fieldset1">
             <legend> <b>SENHA:</b></legend>
-            <input class="caixa" type="password" name="senha">
+            <input class="caixa" type="password" id="senha" name="senha">
             </fieldset>
+            <div id="mensagemErro" ></div>
+            
     
         <br>
 
@@ -44,4 +48,25 @@
         </div>
     </form>
 </body>
+<script>
+function validarCampo() {
+      var campo = document.getElementById('login').value;
+      
+      if (campo === '') {
+        document.getElementById('mensagemErro').innerHTML = 'Campo vazio! Por favor, preencha o campo.';
+        return false;
+      }
+      
+      
+    
+        var campo = document.getElementById('senha').value;
+      
+      if (campo === '') {
+        document.getElementById('mensagemErro').innerHTML = 'Campo vazio! Por favor, preencha o campo.';
+        return false;
+      }
+      
+      return true;
+    }
+</script>
 </html>
