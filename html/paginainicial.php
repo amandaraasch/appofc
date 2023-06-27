@@ -290,8 +290,10 @@ while ($linhas = $comando->fetch())
              <BR>
                 <p><B>REDES SOCIAIS:</B></p>
                 <br>
-<img src="../img/instanovo.png">
+                <div class="arroba">
+
                 <br> @the_inclusive_bakery
+                </div>
             </div>
             
         

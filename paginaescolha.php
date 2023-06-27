@@ -95,7 +95,7 @@ if($adicionado=="torta_de_framboesa")
                  
                 
         <div class="D3">
-            <a href="html/paginainicial.html">
+            <a href="html/paginainicial.php">
             <img  title="Ver Página Inicial" src="img/casinha.png" width="120px" height="60px"> 
             </a> 
 

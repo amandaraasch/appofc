@@ -198,6 +198,14 @@ body
     overflow: hidden;
     
 }
+.arroba
+{
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-left: 80px;
+}
 .D8
 {
    /* background-color: yellow;*/
