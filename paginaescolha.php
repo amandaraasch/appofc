@@ -4,69 +4,69 @@
 $adicionado=$_GET["adicionado"];
 include("conecta.php");
 
-$comando = $pdo->prepare("SELECT * FROM precos where nome_produto='$adicionado'");
+$comando = $pdo->prepare("SELECT * FROM precos where id_preco='$adicionado'");
 $resultado = $comando->execute();
 
 while( $linhas = $comando->fetch()){
     $codigo = $linhas["id_preco"];
 }
 
-if($adicionado=="empadinha")
+if($adicionado=="1")
 {
     $imagem = "img/empadinha2.jpg";
 }
-if($adicionado=="pastel_de_frango")
+if($adicionado=="2")
 {
     $imagem = "img/pastel.jpg";
 }
-if($adicionado=="pao_de_forma")
+if($adicionado=="3")
 {
     $imagem = "img/pão caseiro.jpg";
 }
-if($adicionado=="misto_quente")
+if($adicionado=="4")
 {
     $imagem = "img/misto quente2.jpg";
 }
-if($adicionado=="mini_coxinhas")
+if($adicionado=="5")
 {
     $imagem = "img/imgcoxinha.png";
 }
-if($adicionado=="pao_de_queijo")
+if($adicionado=="6")
 {
     $imagem = "img/PÃO DE QUEIJO 02.JPG";
 }
-if($adicionado=="mini_pizza")
+if($adicionado=="7")
 {
     $imagem = "img/minipizza.jpg";
 }
-if($adicionado=="bolo_de_chocolate")
+if($adicionado=="8")
 {
     $imagem = "img/bolodechocolate.png";
 }
-if($adicionado=="sonho_recheado")
+if($adicionado=="9")
 {
     $imagem = "img/sonho recheado02.jpg";
 }
-if($adicionado=="chocolate_quente")
+if($adicionado=="10")
 {
     $imagem = "img/Chocolate Quente 002.jpg";
 }
 
-if($adicionado=="cookie")
+if($adicionado=="11")
 {
     $imagem = "img/cookie.jpg";
 }
 
-if($adicionado=="torta_de_morango")
+if($adicionado=="12")
 {
     $imagem = "img/tortademorango.jpg";
 }
 
-if($adicionado=="brownie")
+if($adicionado=="13")
 {
     $imagem = "img/brownie.jpg";
 }
-if($adicionado=="torta_de_framboesa")
+if($adicionado=="14")
 {
     $imagem = "img/tortamorango.png";
 }
@@ -155,13 +155,13 @@ if($adicionado=="torta_de_framboesa")
             <div class="produtosvermelho">
                         <fieldset class="fieldcomidas">
                             <br>
-                                <input type="checkbox" id="sem_leite" name="comida"> &nbsp; SEM LEITE <br> <br>
-                                <input type="checkbox" id="sem_ovo" name="comida"> &nbsp; SEM OVO  <br> <br>
-                                <input type="checkbox" id="sem_lactose" name="comida"> &nbsp; SEM LACTOSE  <br> <br>
-                                <input type="checkbox" id="sem_acucar" name="comida"> &nbsp; SEM AÇÚCAR  <br> <br>
-                                <input type="checkbox" id="sem_glutem" name="comida"> &nbsp; SEM GLÚTEM  <br> <br>
-                                <input type="checkbox" id="sem_sal" name="comida"> &nbsp; SEM SAL  <br> <br>
-                                <input type="checkbox" id="sem_proteina_leite" name="comida"> &nbsp; SEM PROTEÍNA DO LEITE <br> <br>
+                                <input type="checkbox" id="sem_leite" name="op_sem_leite"> &nbsp; SEM LEITE <br> <br>
+                                <input type="checkbox" id="sem_ovo" name="op_sem_ovo"> &nbsp; SEM OVO  <br> <br>
+                                <input type="checkbox" id="sem_lactose" name="op_sem_lactose"> &nbsp; SEM LACTOSE  <br> <br>
+                                <input type="checkbox" id="sem_acucar" name="op_sem_acucar"> &nbsp; SEM AÇÚCAR  <br> <br>
+                                <input type="checkbox" id="sem_glutem" name="op_sem_glutem"> &nbsp; SEM GLÚTEM  <br> <br>
+                                <input type="checkbox" id="sem_sal" name="op_sem_sal"> &nbsp; SEM SAL  <br> <br>
+                                <input type="checkbox" id="sem_proteina_leite" name="op_sem_proteina_leite"> &nbsp; SEM PROTEÍNA DO LEITE <br> <br>
                                 <div class="lembrete">
                                     <b>Atenção</b><br><div class="alerta">🚨</div>
                                     <div class="lembrete2">
@@ -173,13 +173,13 @@ if($adicionado=="torta_de_framboesa")
                             <b>QUANTIDADES</b>
                             <fieldset class="fieldquantidades">
                                 <button onclick="Subtrair();" class="menos"> - </button>
-                                <input class="numero" value="1" id="numero" type="number">
+                                <input class="numero" value="1" name="numero" id="numero" type="number">
                                 <button onclick="Adicionar();" class="mais">+</button>
                             </fieldset>
                             <div class="observacao">
                                 <b>ALGUMA OBSERVAÇÃO?</b><br>
                                 <fieldset class="obs">
-                                    <input class="obss" id="obs" type="text">
+                                    <input class="obss" name="obs" id="obs" type="text">
                                 </fieldset>
                                 <a href="#" onclick="salvar('<?php echo($codigo);  ?>');">
                                 <button class="ok"><b>ADICIONAR AO CARRINHO</b></button></a> 
@@ -249,7 +249,10 @@ if($adicionado=="torta_de_framboesa")
             op_sem_glutem=1
         }
 
-        url = "addcarrinho.php?op_sem_leite="+op_sem_leite+"&op_sem_ovo="+op_sem_ovo+"&op_sem_lactose="+op_sem_lactose+"&op_sem_acucar="+op_sem_acucar+"&op_sem_proteina_leite="+op_sem_proteina_leite+"&op_sem_glutem="+op_sem_glutem+"&op_sem_sal="+op_sem_sal
+        observacao=obs.value
+        quantidade=numero.value
+
+        url = "addcarrinho.php?op_sem_leite="+op_sem_leite+"&op_sem_ovo="+op_sem_ovo+"&op_sem_lactose="+op_sem_lactose+"&op_sem_acucar="+op_sem_acucar+"&op_sem_proteina_leite="+op_sem_proteina_leite+"&op_sem_glutem="+op_sem_glutem+"&op_sem_sal="+op_sem_sal+"&obs="+observacao+"&numero="+quantidade
         window.open(url,"_blank")
         
     }

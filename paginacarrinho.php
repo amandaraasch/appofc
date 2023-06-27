@@ -1,3 +1,77 @@
+<?php
+
+$adicionado=$_GET["adiconado"];
+include("conecta.php");
+
+$comando = $pdo->prepare("SELECT * FROM precos where nome_produto='$adicionado'");
+$resultado = $comando->execute();
+
+while( $linhas = $comando->fetch()){
+    $codigo = $linhas["id_preco"];
+}
+
+if($adicionado=="1")
+{
+    $imagem = "img/empadinha2.jpg";
+    
+}
+if($adicionado=="2")
+{
+    $imagem = "img/pastel.jpg";
+}
+if($adicionado=="3")
+{
+    $imagem = "img/pão caseiro.jpg";
+}
+if($adicionado=="4")
+{
+    $imagem = "img/misto quente2.jpg";
+}
+if($adicionado=="5")
+{
+    $imagem = "img/imgcoxinha.png";
+}
+if($adicionado=="6")
+{
+    $imagem = "img/PÃO DE QUEIJO 02.JPG";
+}
+if($adicionado=="7")
+{
+    $imagem = "img/minipizza.jpg";
+}
+if($adicionado=="8")
+{
+    $imagem = "img/bolodechocolate.png";
+}
+if($adicionado=="9")
+{
+    $imagem = "img/sonho recheado02.jpg";
+}
+if($adicionado=="10")
+{
+    $imagem = "img/Chocolate Quente 002.jpg";
+}
+
+if($adicionado=="11")
+{
+    $imagem = "img/cookie.jpg";
+}
+
+if($adicionado=="12")
+{
+    $imagem = "img/tortademorango.jpg";
+}
+
+if($adicionado=="13")
+{
+    $imagem = "img/brownie.jpg";
+}
+if($adicionado=="14")
+{
+    $imagem = "img/tortamorango.png";
+}
+
+?>
 <!DOCTYPE html>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 <html lang="pt-br">
@@ -70,15 +144,15 @@
        <div class="inteiro2">
         <div class="pedido">
             <div class="pedido2">
-                <div class="img"></div>
+                <div class="img"src="<?php echo($imagem);  ?>"></div>
                 <div class="descricao"></div>
                 <div class="nome_produto"></div>
                 <div cLASS="restricoes"></div>
          </div>
             <div class="pagar">
-                <div class="quantidade"><div class="caixa"></div></div>
-                <div class="preco"> <div class="caixa"></div></div>
-                <div class="total"> <div class="caixa"></div></div>
+                <div class="quantidade"><div class="caixa">QTD</div></div>
+                <div class="preco"> <div class="caixa">PREÇO UND</div> <?php echo($preco_atual) ?></div>
+                <div class="total"> <div class="caixa">TOTAL</div></div>
             </div>
             
             

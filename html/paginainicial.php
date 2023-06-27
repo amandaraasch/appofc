@@ -121,9 +121,9 @@ while ($linhas = $comando->fetch())
                            </div>
                                 <br>
                                 <br>
-                              <button onclick="abrir('paginadoces.html');" class="yes" >Doces</button >
+                              <button onclick="abrir('paginadoces.php');" class="yes" >Doces</button >
                              
-                              <button onclick="abrir2('paginasalgados.html');" class="no">Salgados</button>
+                              <button onclick="abrir2('paginasalgados.php');" class="no">Salgados</button>
                             </div>
                             <div class="btn-front">CARDÁPIO</div>
                           </div>

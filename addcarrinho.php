@@ -1,18 +1,18 @@
 <?php
     include("conecta.php");
 
-    $op_sem_leite = $_GET["op_sem_leite"];
-    $sem_ovo      = $_GET["sem_ovo"];
-    $sem_acucar    = $_GET["sem_acucar"];
-    $sem_sal    = $_GET["sem_sal"];
-    $sem_glutem  = $_GET["sem_glutem"];
-    $sem_proteina_leite    = $_GET["sem_proteina_leite"];
-    $sem_lactose   = $_GET["sem_lactose"];
     $obs    = $_GET["obs"];
-    $sem_numero    = $_GET["sem_numero"];
-
-    //SE CLICOU NO BOTÃO INSERIR
+    $numero    = $_GET["numero"];
+    $sem_ovo      = $_GET["op_sem_ovo"];
+    $sem_lactose   = $_GET["op_sem_lactose"];
+    $sem_acucar    = $_GET["op_sem_acucar"];
+    $sem_proteina_leite    = $_GET["op_sem_proteina_leite"];
+    $sem_sal    = $_GET["op_sem_sal"];
+    $sem_glutem  = $_GET["op_sem_glutem"];
+    $op_sem_leite = $_GET["op_sem_leite"];
    
-        $comando = $pdo->prepare("INSERT INTO restricoes VALUES( $op_sem_leite ,$sem_ovo,$sem_acucar,$sem_sal,$sem_glutem,$sem_proteina_leite,$sem_lactose, $sem_numero,' $obs ')");
+  //SE CLICOU NO BOTÃO INSERIR
+   
+        $comando = $pdo->prepare("INSERT INTO restricoes VALUES( ' $obs ',$numero,$sem_ovo,$sem_lactose, $sem_acucar,$sem_proteina_leite, $sem_sal,$sem_glutem, $op_sem_leite)");
         $resultado = $comando->execute();
-        header("Location: html/paginacarrinho.php");
+        header("Location:paginacarrinho.php");
