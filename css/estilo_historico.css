@@ -356,7 +356,7 @@ a
 }
 .inteiro2
 {
-    background-color: rgba(255, 255, 255, 0.719);
+    background-color: rgba(28, 101, 94, 0.431);
     border: 2px;
     border-style: solid;
     width: 90%;
@@ -395,7 +395,7 @@ a
     width: 200px;
     height: 70px;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(255, 255, 255);
     border-width: 2px;
     justify-content: center;
     justify-items: center;
@@ -409,7 +409,7 @@ a
 .pedido
 {
     border-style: solid;
-    border-color: rgba(0, 0, 0, 0.462);
+    border-color: rgb(255, 255, 255);
     border-width:2px;
     width:1420px; ;
     height:200px ;
@@ -421,7 +421,7 @@ a
 .img
 {
     border-style: solid;
-    border-color: rgba(0, 0, 0, 0.462);
+    border-color: rgb(255, 255, 255);
     border-width:2px;
     width:280px; ;
     height:150px ;
@@ -434,7 +434,7 @@ a
 .nome_produto
 {
     border-style: solid;
-    border-color: rgba(0, 0, 0, 0.462);
+    border-color: rgb(255, 255, 255);
     border-width:2px;
     width:240px; 
     height:50px ;
@@ -444,7 +444,7 @@ a
 .restricoes
 {
     border-style: solid;
-    border-color: rgba(0, 0, 0, 0.462);
+    border-color: rgb(255, 255, 255);
     border-width:2px;
     width:280px; 
     height:20px ;
@@ -454,7 +454,7 @@ a
 .preco
 {
     border-style: solid;
-    border-color: rgba(0, 0, 0, 0.462);
+    border-color: rgb(255, 255, 255);
     border-width:2px;
     width:100px; 
     height:200px ;
@@ -464,7 +464,7 @@ a
 .total
 {
     border-style: solid;
-    border-color: rgba(0, 0, 0, 0.462);
+    border-color: rgb(255, 255, 255);
     border-width:2px;
     width:100px; 
     height:200px ;
@@ -473,7 +473,7 @@ a
 .quantidade
 {
     border-style: solid;
-    border-color: rgba(0, 0, 0, 0.462);
+    border-color: rgb(255, 255, 255);
     border-width:2px;
     width:100px; 
     height:200px ;
