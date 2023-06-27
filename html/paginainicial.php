@@ -34,7 +34,7 @@ while ($linhas = $comando->fetch())
     <div class="principal">
         
         <div class="D1">
-        <img id="status-img" src="../img/vermelha.png" alt="Offline" width="35px" height="35px">
+        <img id="status-img" src="../img/vermelha.png" alt="Offline" width="25px" height="25px">
             <div class="D2">
               
                 
