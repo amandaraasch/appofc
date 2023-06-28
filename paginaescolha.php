@@ -179,7 +179,7 @@ if($adicionado=="14")
                             <div class="observacao">
                                 <b>ALGUMA OBSERVAÇÃO?</b><br>
                                 <fieldset class="obs">
-                                    <input class="obss" name="obs" id="obs" type="text">
+                                    <input class="obss" name="observacao" id="observacao" type="text">
                                 </fieldset>
                                 <a href="#" onclick="salvar('<?php echo($codigo);  ?>');">
                                 <button class="ok"><b>ADICIONAR AO CARRINHO</b></button></a> 
@@ -249,10 +249,11 @@ if($adicionado=="14")
             op_sem_glutem=1
         }
 
-        observacao=obs.value
+        obs=observacao.value
         quantidade=numero.value
 
-        url = "addcarrinho.php?op_sem_leite="+op_sem_leite+"&op_sem_ovo="+op_sem_ovo+"&op_sem_lactose="+op_sem_lactose+"&op_sem_acucar="+op_sem_acucar+"&op_sem_proteina_leite="+op_sem_proteina_leite+"&op_sem_glutem="+op_sem_glutem+"&op_sem_sal="+op_sem_sal+"&obs="+observacao+"&numero="+quantidade
+      
+        url = "addcarrinho.php?op_sem_leite="+op_sem_leite+"&op_sem_ovo="+op_sem_ovo+"&op_sem_lactose="+op_sem_lactose+"&op_sem_acucar="+op_sem_acucar+"&op_sem_proteina_leite="+op_sem_proteina_leite+"&op_sem_glutem="+op_sem_glutem+"&op_sem_sal="+op_sem_sal+"&observacao="+obs+"&numero="+quantidade+"&adicionado=<?php echo($codigo); ?>"
         window.open(url,"_blank")
         
     }

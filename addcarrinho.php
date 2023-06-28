@@ -1,7 +1,8 @@
 <?php
     include("conecta.php");
 
-    $obs    = $_GET["obs"];
+    $adicionado  = $_GET["adicionado"];
+    $observacao    = $_GET["observacao"];
     $numero    = $_GET["numero"];
     $sem_ovo      = $_GET["op_sem_ovo"];
     $sem_lactose   = $_GET["op_sem_lactose"];
@@ -13,6 +14,6 @@
    
   //SE CLICOU NO BOTÃO INSERIR
    
-        $comando = $pdo->prepare("INSERT INTO restricoes VALUES( ' $obs ',$numero,$sem_ovo,$sem_lactose, $sem_acucar,$sem_proteina_leite, $sem_sal,$sem_glutem, $op_sem_leite)");
+        $comando = $pdo->prepare("INSERT INTO restricoes VALUES( $adicionado,'$observacao',$numero,$sem_ovo,$sem_lactose, $sem_acucar,$sem_proteina_leite, $sem_sal,$sem_glutem, $op_sem_leite,'')");
         $resultado = $comando->execute();
-        header("Location:paginacarrinho.php");
+       header("Location:paginacarrinho.php?adicionado=$adicionado");

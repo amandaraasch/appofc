@@ -1,14 +1,22 @@
 <?php
 
-$adicionado=$_GET["adiconado"];
+$adicionado=$_GET["adicionado"];
 include("conecta.php");
 
-$comando = $pdo->prepare("SELECT * FROM precos where nome_produto='$adicionado'");
+$comando = $pdo->prepare("SELECT * FROM precos,restricoes where precos.id_preco=$adicionado and precos.id_preco=restricoes.id_preco order by codigo desc limit 1");
 $resultado = $comando->execute();
 
 while( $linhas = $comando->fetch()){
-    $codigo = $linhas["id_preco"];
+   $nome_produto=$linhas["nome_produto"];
+   $preco_atual=$linhas["preco_atual"];
+   $quantidade=$linhas["quantidade"];
+   $observacao=$linhas["observacao"];
+   $subtotal=$preco_atual*$quantidade;
 }
+
+
+
+
 
 if($adicionado=="1")
 {
@@ -19,7 +27,7 @@ if($adicionado=="2")
 {
     $imagem = "img/pastel.jpg";
 }
-if($adicionado=="3")
+if($adicionado==3)
 {
     $imagem = "img/pão caseiro.jpg";
 }
@@ -99,12 +107,7 @@ if($adicionado=="14")
 
             </div>
             
-             <div class="D5">
-                <a href="html/paginahistorico.html">
-                <img title="Ver Histórico" src="img/lupa.png" width="35px" height="35px"> 
-                </a> 
-                
-             </div>
+             
              <div class="D6">
                 <a href="paginaperfil.php">
                 <img  title="Ver Perfil" src="img/perfil.png" width="70px" height="70px"> 
@@ -144,15 +147,15 @@ if($adicionado=="14")
        <div class="inteiro2">
         <div class="pedido">
             <div class="pedido2">
-                <div class="img"src="<?php echo($imagem);  ?>"></div>
-                <div class="descricao"></div>
-                <div class="nome_produto"></div>
-                <div cLASS="restricoes"></div>
+                <img class="img" src="<?php echo ("$imagem");  ?>">
+                <div class="descricao">
+                <div class="nome_produto"> <?php echo("$nome_produto"); ?>  </div>
+                <div cLASS="restricoes"><?php echo("$observacao"); ?> </div>
          </div>
             <div class="pagar">
-                <div class="quantidade"><div class="caixa">QTD</div></div>
-                <div class="preco"> <div class="caixa">PREÇO UND</div> <?php echo($preco_atual) ?></div>
-                <div class="total"> <div class="caixa">TOTAL</div></div>
+                <div class="quantidade"><div class="caixa">QTD</div><?php echo("$quantidade"); ?></div>
+                <div class="preco"><div class="caixa">PREÇO UND</div> <?php echo("$preco_atual"); ?></div>
+                <div class="total"> <div class="caixa">TOTAL</div><?php echo("$subtotal"); ?></div>
             </div>
             
             
@@ -162,7 +165,7 @@ if($adicionado=="14")
        </div>
 
        <div class="botoes">
-        <a href="html/paginapagamento.html" >
+        <a href="html/paginapagamento.php?id_preco=<?php echo ("$adicionado");  ?>" >
             <div class="comprar"><B>COMPRAR</B></div>
         </a>
       
@@ -178,6 +181,7 @@ if($adicionado=="14")
             
 </div>   
 </body>
+</head>
 </html>     
             
 
@@ -193,4 +197,3 @@ if($adicionado=="14")
 
 
 <img class="logo" src="img/cupcake.png"   >  
-        

@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 <html lang="pt-br">
@@ -183,7 +186,7 @@
             
             
           <div class="pagamento5">
-                <img src="../img/imgcoxinha.png" width="72%">
+                <img src="<?php echo ("$imagem");  ?>">
                 <div class="preco">
                     <b>COXINHA</b>
                     <b>R$15,00</b>
