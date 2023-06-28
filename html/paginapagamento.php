@@ -1,5 +1,14 @@
 
+<?php
+$subtotal=$_GET["subtotal"];
 
+
+
+
+
+
+
+?>
 
 <!DOCTYPE html>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
@@ -30,12 +39,7 @@
 
             </div>
             
-             <div class="D5">
-                <a href="paginahistorico.html">
-                <img title="Ver Histórico" src="../img/lupa.png" width="35px" height="35px"> 
-                </a> 
-                
-             </div>
+             
              <div class="D6">
                 <a href="../paginaperfil.php">
                 <img  title="Ver Perfil" src="../img/perfil.png" width="70px" height="70px"> 
@@ -75,7 +79,7 @@
                         <b>EFETUE SEU PAGAMENTO AQUI:</b>
                     </div><br>
                     <b class="valortotal" >O VALOR TOTAL DE SEU PEDIDO FOI: <br>
-                         <span class="dinheiro"> <br> 25,99 </span></b>
+                         <span class="dinheiro"> <br><?php echo("$subtotal"); ?></span></b>
                     <br><br>
                     <b>CONFIRME O SEU ENDEREÇO:</b>
                     <br>
@@ -187,10 +191,7 @@
             
           <div class="pagamento5">
                 <img src="<?php echo ("$imagem");  ?>">
-                <div class="preco">
-                    <b>COXINHA</b>
-                    <b>R$15,00</b>
-                </div>
+                
                 <div class="btt">
                     <button id="comprar" onclick="Comprar();" class="confirmaPAG">
                         <b><span

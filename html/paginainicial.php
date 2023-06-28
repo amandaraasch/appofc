@@ -55,13 +55,7 @@ while ($linhas = $comando->fetch())
                         </a> 
                         
                      </div>
-                    <div class="D5">
-                        <div title="Ver histórico" class="interior"></div>
-                        <a href="paginahistorico.html">
-                        <img  src="../img/lupa.png" width="35px" height="35px"> 
-                        </a> 
-                        
-                    </div>
+                    
                     <div class="D6">
                         <div title="Ver Perfil" class="interior"></div>
                         <a href="../paginaperfil.php">

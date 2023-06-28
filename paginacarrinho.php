@@ -165,7 +165,7 @@ if($adicionado=="14")
        </div>
 
        <div class="botoes">
-        <a href="html/paginapagamento.php?id_preco=<?php echo ("$adicionado");  ?>" >
+        <a href="html/paginapagamento.php?id_preco=<?php echo ("$adicionado");  ?>&subtotal=<?php echo ("$subtotal");  ?>" >
             <div class="comprar"><B>COMPRAR</B></div>
         </a>
       
