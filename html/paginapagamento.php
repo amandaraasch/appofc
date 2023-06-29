@@ -1,7 +1,7 @@
 
 <?php
 $subtotal=$_GET["subtotal"];
-$adicionado=$_GET["adicionado"];
+
 
 
 
@@ -187,7 +187,8 @@ $adicionado=$_GET["adicionado"];
             
             
           <div class="pagamento5">
-                <img src="<?php echo ("$adicionado");  ?>">
+            <IMG SRC="../img/novalogo.png" width="95px">
+          <p> ESTAMOS QUASE LÁ....<P>
                 
                 <div class="btt">
                     <button id="comprar" onclick="Comprar();" class="confirmaPAG">

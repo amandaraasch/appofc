@@ -12,6 +12,12 @@ body
     align-items: center;
     align-content: center;
 }
+.pagamento5 p
+    {
+        font-size: 25PX;
+        color: aliceblue;
+    }
+
 #status-img
 {
     color: azure;
