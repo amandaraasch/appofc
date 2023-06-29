@@ -57,10 +57,7 @@ $subtotal=$_GET["subtotal"];
                 <img  title="Ver carrinho" src="../img/carrinho.png" width="130px" height="80px"> 
                 </a>
             </div>
-             <div class="D9">
-                <img src="../img/trespontos.png" width="280px" height="190px"> 
-
-             </div>
+             
              
             <div class="D11"></div>
             

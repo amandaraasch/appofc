@@ -66,8 +66,8 @@ body
     position: absolute;
     width: 60px;
     height: 60px;
-    left: 590px;
-    top:9px;
+    left: 400px;
+    top:12px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -84,7 +84,7 @@ body
     position: absolute;
     width: 60px;
     height: 60px;
-    left: 320px;
+    left: 220px;
     top:9px;
     display: flex;
     flex-direction: row;
@@ -101,8 +101,8 @@ body
     position: absolute;
     width: 60px;
     height: 60px;
-    left: 460px;
-    top:9px;
+    left: 300px;
+    top:15px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
