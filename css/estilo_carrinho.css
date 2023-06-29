@@ -337,7 +337,7 @@ body
     border-color: white;
     border-width:2px;
     width:1420px; ;
-    height:200px ;
+    height:250px ;
     margin-top: 5px;
     flex-direction: row;
     display: flex;
@@ -349,10 +349,10 @@ body
     border-color: white;
     border-width:2px;
     width:280px; ;
-    height:150px ;
+    height:200px ;
     border-radius: 5px;
-    margin-top: 16px;
-    margin-left: 6px;
+    margin-top: 20px;
+    margin-left: 8px;
     z-index: 1;
     position: absolute;
 }
@@ -382,7 +382,7 @@ body
     border-color:white;
     border-width:2px;
     width:100px; 
-    height:200px ;
+    height:250px ;
     text-align: center;
    
   
@@ -393,7 +393,7 @@ body
     border-color: white;
     border-width:2px;
     width:100px; 
-    height:200px ;
+    height:250px ;
     text-align: center;
    
   
@@ -404,7 +404,7 @@ body
     border-color: white;
     border-width:2px;
     width:100px; 
-    height:200px ;
+    height:250px ;
     text-align: center;
    
   
@@ -433,7 +433,7 @@ body
 .pagar
 {
     width:300px ;
-    height: 200px;
+    height: 250px;
 
     margin-left: 1107px;
     flex-direction: row;

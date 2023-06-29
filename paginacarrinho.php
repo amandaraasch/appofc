@@ -153,9 +153,9 @@ if($adicionado=="14")
                 <div cLASS="restricoes"><?php echo("$observacao"); ?> </div>
          </div>
             <div class="pagar">
-                <div class="quantidade"><div class="caixa">QTD</div><?php echo("$quantidade"); ?></div>
-                <div class="preco"><div class="caixa">PREÇO UND</div> R$<?php echo("$preco_atual"); ?></div>
-                <div class="total"> <div class="caixa">TOTAL</div>R$<?php echo("$subtotal"); ?>,00</div>
+                <div class="quantidade"><div class="caixa">QTD</div><br><?php echo("$quantidade"); ?></div>
+                <div class="preco"><div class="caixa">PREÇO UND</div> <br>R$<?php echo("$preco_atual"); ?></div>
+                <div class="total"> <div class="caixa">TOTAL</div><br>R$<?php echo("$subtotal"); ?>,00</div>
             </div>
             
             
