@@ -73,7 +73,7 @@ $subtotal=$_GET["subtotal"];
                         <b>EFETUE SEU PAGAMENTO AQUI:</b>
                     </div><br>
                     <b class="valortotal" >O VALOR TOTAL DE SEU PEDIDO FOI: <br>
-                         <span class="dinheiro"> <br><?php echo("$subtotal"); ?></span></b>
+                         <span class="dinheiro"> <br>R$<?php echo("$subtotal"); ?>,00</span></b>
                     <br><br>
                     <b>CONFIRME O SEU ENDEREÇO:</b>
                     <br>
