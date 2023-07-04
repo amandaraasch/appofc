@@ -88,7 +88,7 @@ if($adicionado=="14")
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Website Icon" type="png"
-    href="../img/minilogo1.png">
+    href="img/minilogo1.png">
     <title>Pagina carrinho</title>
     <link rel="stylesheet" href="css/estilo_carrinho.css">
     <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
